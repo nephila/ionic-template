@@ -1,4 +1,4 @@
-#ionic start $1
+ionic start $1 blank
 cd $1
 echo -e "\x1B[44mPreparing Android stuff...\x1B[0m"
 ionic platform add android
@@ -15,4 +15,8 @@ echo -e "\x1B[44mDone.\x1B[0m"
 echo ""
 echo -e "\x1B[44mPreparing gulpfile.js...\x1B[0m"
 wget -N https://raw.githubusercontent.com/nephila/ionic-template/master/gulpfile.js
+echo -e "\x1B[44mDone.\x1B[0m"
+echo ""
+echo -e "\x1B[44mPreparing libraries...\x1B[0m"
+bower install
 echo -e "\x1B[44mDone.\x1B[0m"
