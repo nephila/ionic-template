@@ -1,4 +1,4 @@
-ionic start $1 blank
+ionic start $1 $2
 cd $1
 echo -e "\x1B[44mPreparing Android stuff...\x1B[0m"
 ionic platform add android
