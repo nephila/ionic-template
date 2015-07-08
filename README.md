@@ -4,7 +4,7 @@
 
 Install Ionic Framework (you must be superuser)
 
-    $ npm install -g cordova ionic
+    $ npm install -g bower cordova ionic
 
 Install the script on your machine
 
