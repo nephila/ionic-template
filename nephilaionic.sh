@@ -14,5 +14,5 @@ touch scss/style.scss
 echo -e "\x1B[44mDone.\x1B[0m"
 echo ""
 echo -e "\x1B[44mPreparing gulpfile.js...\x1B[0m"
-wget
+wget -N https://raw.githubusercontent.com/nephila/ionic-template/develop/gulpfile.js
 echo -e "\x1B[44mDone.\x1B[0m"
