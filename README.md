@@ -12,7 +12,7 @@ Install the script on your machine
 
 Then run it specifying the name of your project and the type (tabs, blank)
 
-    $ ./nephilaionic.sh myApp type
+    $ ./nephilaionic.sh myApp [blank|tabs|sidemenu]
 
 Now you can start working on your app
 
