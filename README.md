@@ -2,7 +2,7 @@
 
 ## Setup
 
-Install Ionic Framework
+Install Ionic Framework (you must be superuser)
 
     $ npm install -g cordova ionic
 
