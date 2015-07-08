@@ -9,3 +9,7 @@ Install the script on your machine
 Then run it specifying the name of your project and the type (tabs, blank)
 
     ./nephilaionic.sh myApp type
+
+## License
+
+MIT @ Nephila
