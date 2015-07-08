@@ -22,4 +22,5 @@ echo -e "\x1B[1;97;44mDone.\x1B[0m"
 echo ""
 echo -e "\x1B[1;97;44mPreparing libraries...\x1B[0m"
 bower install
+bower install --save react
 echo -e "\x1B[1;97;44mDone.\x1B[0m"
