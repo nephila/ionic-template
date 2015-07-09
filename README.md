@@ -20,6 +20,7 @@ Now you can start working on your app
 
     $ cd myApp
     $ ionic serve
+    $ gulp watch
 
 For more info about getting started with Ionic framework visit http://ionicframework.com/getting-started/
 
