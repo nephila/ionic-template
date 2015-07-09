@@ -7,13 +7,31 @@ var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var react = require('gulp-react');
 var sh = require('shelljs');
+var jshint = require('gulp-jshint');
+var scsslint = require('gulp-scss-lint');
+
+scsslint({
+    'config': '.scss-lint.yml',
+});
 
 var paths = {
   sass: ['./scss/**/*.scss'],
-  jsx: ['./jsx/**/*.jsx']
+  jsx: ['./jsx/**/*.jsx'],
+  js: ['./www/js/**/*.js'],
 };
 
 gulp.task('default', ['react', 'sass']);
+
+gulp.task('js-lint', function() {
+  return gulp.src(paths.js)
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
+});
+
+gulp.task('scss-lint', function() {
+  gulp.src(paths.sass)
+    .pipe(scsslint());
+});
 
 gulp.task('sass', function(done) {
   gulp.src(paths.sass)
@@ -38,8 +56,9 @@ gulp.task('react', function(done) {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(paths.sass, ['sass']);
+  gulp.watch(paths.sass, ['scss-lint', 'sass']);
   gulp.watch(paths.jsx, ['react']);
+  gulp.watch(paths.js, ['js-lint']);
 });
 
 gulp.task('install', ['git-check'], function() {
