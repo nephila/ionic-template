@@ -5,6 +5,8 @@ echo -e "\x1B[1;97;44mDone.\x1B[0m"
 echo ""
 echo -e "\x1B[1;97;44mPreparing Android stuff...\x1B[0m"
 ionic platform add android
+echo -e "\x1B[1;97;44mPreparing iOS stuff...\x1B[0m"
+ionic platform add ios
 echo -e "\x1B[1;97;44mDone.\x1B[0m"
 echo ""
 echo -e "\x1B[1;97;44mPreparing React.js stuff...\x1B[0m"
